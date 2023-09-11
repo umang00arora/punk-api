@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-const ShowCard = ({ name, image, year }) => {
+const ShowCard = ({ name, image, tagline }) => {
   return (
     <SearchCard>
       <SearchImgWrapper>
         <img src={image} alt={name} />
       </SearchImgWrapper>
       <h2>{name}</h2>
-      <p>Released in {year}</p>
+      <p>{tagline}</p>
     </SearchCard>
   );
 };

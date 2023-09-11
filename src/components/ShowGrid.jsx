@@ -22,7 +22,7 @@ const ShowGrid = ({beers}) => {
   //console.log(beers)
   return (
     <FlexGrid>
-      {beers?.map((val)=>(<ShowCard key={val.id} image={val.image_url} name={val.name} year={val.tagline}/>))}
+      {beers?.map((val)=>(<ShowCard key={val.id} image={val.image_url} name={val.name} tagline={val.tagline}/>))}
     </FlexGrid>
   )
 }
